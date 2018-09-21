@@ -1,0 +1,149 @@
+$yellow: #FCDD6F;
+$coral-color: #E37171;
+$gray: #C7C7C7;
+
+body {
+  box-sizing: border-box;
+}
+
+div, img {
+  box-sizing: border-box;
+}
+
+.app-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 377px;
+}
+
+.header {
+  background-color: $yellow;
+  border-top: 3px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 0;
+
+  .image {
+    text-align: center;
+  }
+
+  span {
+    font-size: 18px;
+    line-height: 21px;
+    font-family: Roboto;
+  }
+}
+
+.list {
+  overflow: hidden;
+}
+
+.item {
+  left: 0;
+  width: 130%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #C9C9C9;
+
+  .photo {
+    width: 25%;
+    height: 110px;
+    padding: 20px 15px;
+
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+    }
+  }
+
+  .info {
+    width: 65%;
+
+    .name span {
+      font-family: Roboto;
+      font-size: 24px;
+      line-height: 28px;
+      color: black;
+    }
+
+    .city {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      span {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 16px;
+        color: black;
+      }
+    }
+
+    .nick span {
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 16px;
+      color: $gray;
+    }
+  }
+
+  .control {
+    width: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+
+    .arrow {
+      width: 25%;
+    }
+
+    .trash {
+      padding: 29px 0;
+      background-color: $coral-color;
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.footer {
+  background-color: $yellow;
+  display: flex;
+  justify-content: center;
+  height: 37px;
+
+  .refresh-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .icon {
+      margin-right: 8px;
+
+      svg {
+        margin-top: 2px;
+      }
+    }
+
+    span {
+      font-family: Roboto;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}
